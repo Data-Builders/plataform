@@ -1,0 +1,72 @@
+.centro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajuste a altura conforme necessário */
+  overflow: hidden; /* Para não permitir que o conteúdo saia dos limites */
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://compositegroup.com.br/blog/wp-content/uploads/2020/11/composite-problemas-construc%CC%A7a%CC%83o-civil-e1605796857625.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5; /* Ajuste a opacidade conforme desejado */
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Centralizar o texto dentro da div */
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+
+.toolbar-background {
+  background-image: url(https://i.ibb.co/TWrqct8/nome.png); /* Substitua pelo caminho correto da imagem */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .toolbar-background ion-button {
+    display: none; /* Esconde o botão em telas menores */
+  }
+}
+ion-img {
+  height: 150%;
+  width: 150%;
+  background-color: rgb(222, 222, 222); /* Substitua pela cor de cinza que você deseja */
+  padding: 5px; /* Adicione um espaçamento interno para o contêiner da imagem */
+}
+
+.image-container {
+
+}
+
+/* Ajuste o tamanho, margens e outros estilos conforme necessário */
+.ion-content {
+  margin-top: 20px;
+}

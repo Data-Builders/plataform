@@ -1,0 +1,50 @@
+<ion-header>
+  <!-- Nova toolbar com a imagem como fundo -->
+  <ion-toolbar class="toolbar-background">
+    <ion-title>Bem Vindo!</ion-title>
+    <ion-buttons slot="end">
+      <!-- Alinha os botões à direita -->
+      <ion-button routerLink="/login">
+        <ion-img src="https://i.ibb.co/TWrqct8/nome.png"></ion-img
+        ><!-- Substitua pelo caminho correto da imagem -->
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="centro">
+    <div class="background-img"></div>
+
+    <div class="overlay-content">
+      <div class="center-container">
+        <ion-input
+          class="custom"
+          label="Email"
+          label-placement="floating"
+          fill="outline"
+          placeholder="Email"
+        ></ion-input>
+      </div>
+      <br />
+      <div class="center-container">
+        <ion-input
+          class="custom"
+          type="password"
+          label="Senha"
+          label-placement="floating"
+          fill="outline"
+          placeholder="Senha"
+        ></ion-input>
+      </div>
+      <br />
+      <div class="center-container">
+        <a href="https://databuilders-dashboard.firebaseapp.com">
+          <ion-button shape="round" fill="outline">
+            <ion-icon slot="start" name="person-circle-outline"></ion-icon>login
+          </ion-button>
+        </a>
+      </div>
+    </div>
+  </div>
+</ion-content>
